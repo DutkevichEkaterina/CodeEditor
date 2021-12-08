@@ -1,0 +1,9 @@
+{
+  "keyword": { "color" : "yellow"},
+  "function.method": { "color" : "blue" },
+  "function": {"color" : "red"},
+  "keyword": {"color" : "green"},
+  "property": {"color" : "red"},
+  "string": {"color" : "red"},
+  "number": {"color" : "red"}
+}
