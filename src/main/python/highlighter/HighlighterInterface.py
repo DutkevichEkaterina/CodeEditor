@@ -1,4 +1,4 @@
-from src.main.python.highlighter import HighlighterCallback
+from highlighter import HighlighterCallback
 
 class HighlighterInterface:
 

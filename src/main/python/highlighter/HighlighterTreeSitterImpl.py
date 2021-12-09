@@ -1,7 +1,7 @@
 import tree_sitter
 from tree_sitter import Language, Parser
 
-from src.main.python.highlighter.HighlighterCallback import HighlighterCallback
+from highlighter.HighlighterCallback import HighlighterCallback
 
 class HighlighterTreeSitterImpl :
 

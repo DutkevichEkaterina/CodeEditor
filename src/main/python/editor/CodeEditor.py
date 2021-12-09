@@ -1,10 +1,10 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
-from src.main.python.highlighter.HighlighterTreeSitterImpl import HighlighterTreeSitterImpl
-from src.main.python.editor.TagAdd import TagAdd
-from src.main.python.editor.TagRegistry import TagRegistry
-from src.main.python.editor.Theme import Theme
+from highlighter.HighlighterTreeSitterImpl import HighlighterTreeSitterImpl
+from editor.TagAdd import TagAdd
+from editor.TagRegistry import TagRegistry
+from editor.Theme import Theme
 
 
 class ModifiedMixin:
