@@ -7,13 +7,13 @@ class TagRegistry:
         if name in self.styles_dict:
             return self.styles_dict[name].get("color")
         else:
-            i = name.find(".")
+            i = name.rfind(".")
             while i != -1:
                 # тут надо будет обрезать строку и поискать
                 name = name[:i]
                 if name in self.styles_dict:
                     return self.styles_dict[name].get("color")
-                i = name.find(".")
+                i = name.rfind(".")
             return None
 
     styles_dict: dict
