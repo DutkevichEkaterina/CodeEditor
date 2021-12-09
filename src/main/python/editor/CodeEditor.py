@@ -139,8 +139,10 @@ class CodeEditor:
         #self.configure_tags()
         self.shortcuts()
         self.tag_registry = TagRegistry(styles_dict)
+        self.styles_dict = styles_dict
         self.h_callback = TagAdd(self.tag_registry, self.txtarea)
         self.theme = Theme(styles_dict, self.txtarea)
+        self.old_text = ""
 
 
     def settitle(self):
@@ -173,7 +175,13 @@ class CodeEditor:
         self.highlighter.highlight(self.txtarea.get("1.0", END), self.h_callback)
 
     def update_highlight(self):
+        # if self.old_text == "":
+        for tag in self.txtarea.tag_names():
+            self.txtarea.tag_delete(tag)
+        self.theme.update()
         self.highlighter.highlight(self.txtarea.get("1.0", END), self.h_callback)
+
+
 
     def savefile(self, *args):
         try:

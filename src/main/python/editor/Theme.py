@@ -1,5 +1,9 @@
 class Theme:
     def __init__(self, theme: dict, txtArea):
         self.txtArea = txtArea
-        for style in theme:
-            txtArea.tag_configure(str(theme[style].get("color")), foreground = str(theme[style].get("color")))
+        self.theme = theme
+        self.update()
+
+    def update(self):
+        for style in self.theme:
+            self.txtArea.tag_configure(str(self.theme[style].get("color")), foreground = str(self.theme[style].get("color")))
