@@ -1,9 +1,10 @@
 {
-  "keyword": { "color" : "yellow"},
-  "function.method": { "color" : "blue" },
-  "function": {"color" : "red"},
-  "keyword": {"color" : "green"},
-  "property": {"color" : "red"},
-  "string": {"color" : "red"},
-  "number": {"color" : "red"}
+  "keyword": { "color" : "dark orange"},
+  "function.method": { "color" : "dark red" },
+  "function.method.builtin": {"color" : "red"},
+  "function": {"color" : "indian red"},
+  "property": {"color" : "blue"},
+  "string": {"color" : "sea green"},
+  "number": {"color" : "grey"},
+  "comment": {"color" :  "green"}
 }
