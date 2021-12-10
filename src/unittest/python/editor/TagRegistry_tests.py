@@ -1,6 +1,6 @@
 import unittest
 
-from src.main.python.editor.TagRegistry import TagRegistry
+from editor.TagRegistry import TagRegistry
 
 
 class TagRegistryTest(unittest.TestCase):
